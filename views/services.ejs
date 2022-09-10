@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <title>Services</title>
+        <%- include('partials/head.ejs') %>
+    </head>
+    <body>
+        <%- include('partials/navbar.ejs') %>
+        <div class="section black wf-section">
+            <div class="w-container">
+                <div class="title">
+                    <h1>OUR SERVICES</h1>
+                </div>
+                <div class="w-row">
+                    <div class="w-col w-col-4">
+                        <div class="service-block">
+                            <h1 class="number">1.</h1>
+                            <h3 class="service-title">Text analysis</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. </p>
+                        </div>
+                    </div>
+                    <div class="w-col w-col-4">
+                        <div class="service-block">
+                            <h1 class="number">2.</h1>
+                            <h3 class="service-title">NSFW Detection</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. </p>
+                        </div>
+                    </div>
+                    <div class="w-col w-col-4">
+                        <div class="service-block">
+                            <h1 class="number">3.</h1>
+                            <h3 class="service-title">Phishing prevention</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section darkgrey wf-section">
+            <div class="w-container">
+                <div class="w-form">
+                    <form id="wf-form-analysis_demo" name="wf-form-analysis_demo" data-name="analysis_demo" method="post"><label for="name" class="field-label-2">Try With Your Own Inputs!<br/>‍<br/>(currently only supports Text Analysis or Links)</label><input type="text" class="text-field w-input" maxlength="256" name="name" data-name="Name" placeholder="" id="name"/><input type="submit" value="Submit" data-wait="Please wait..." class="submit-button w-button"/></form>
+                    <div class="w-form-done">
+                        <div>Thank you! Your submission has been received!</div>
+                    </div>
+                    <div class="w-form-fail">
+                        <div>Oops! Something went wrong while submitting the form.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <%- include('partials/footer.ejs') %>
+    </body>
+</html>

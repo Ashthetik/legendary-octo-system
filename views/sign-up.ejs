@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>Sign Up</title>
+        <%- include('partials/head.ejs') %>
+    </head>
+    <body>
+        <%- include("partials/navbar.ejs") %>
+        <div class="section black wf-section">
+            <div class="w-container">
+                <div class="title">
+                    <h2>No money? no worries!</h2>
+                    <div class="subtitle">Scarlet is fully committed to bring you the best features at low-to-no cost.</div>
+                </div>
+                <div class="w-row">
+                    <div class="w-col w-col-7">
+                        <div class="w-form">
+                            <form name="email-form" data-name="Email Form" id="email-form" method="get" class="sign-up-form w-clearfix"><input type="text" class="field left w-input" maxlength="256" name="first-name" data-name="First Name" placeholder="First Name" id="field" required=""/><input type="text" class="field right w-input" maxlength="256" name="last-name" data-name="Last Name" placeholder="Last Name" id="field"/><input type="email" class="field w-input" maxlength="256" name="email" data-name="Email" placeholder="Email Address" id="field" required=""/><input type="email" class="field w-input" maxlength="256" name="email" data-name="Email" placeholder="Retype Email Address" id="field" required=""/><input type="submit" value="Sign Up" data-wait="Please wait..." class="button sign-up w-button"/></form>
+                            <div class="success-message big w-form-done">
+                                <h2>Thanks for signing up!</h2>
+                                <p>We will send you an email very soon with next steps. </p>
+                            </div>
+                            <div class="w-form-fail">
+                                <p>Oops! Something went wrong while submitting the form :(</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-col w-col-5"></div>
+                </div>
+            </div>
+        </div>
+        <%- include('partials/footer.ejs') %> 
+    </body>
+</html>

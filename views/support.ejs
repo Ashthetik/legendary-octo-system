@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>Support</title>
+        <%- include('partials/head.ejs') %>
+    </head>
+    <body>
+        <%- include("partials/navbar.ejs") %>
+        <div class="section black wf-section">
+            <div class="w-container">
+                <h1>Getting in touch is easy</h1>
+                <div class="subtitle">We&#x27;ll get back to you ASAP. No worries.</div>
+                <div class="w-form">
+                    <form name="email-form" data-name="Email Form" id="email-form" method="get" class="w-clearfix"><input type="text" class="field left w-input" maxlength="256" name="first-name" data-name="First Name" placeholder="First Name" id="field" required=""/><input type="text" class="field right w-input" maxlength="256" name="last-name" data-name="Last Name" placeholder="Last Name" id="field"/><input type="email" class="field w-input" maxlength="256" name="email" data-name="Email" placeholder="Email Address" id="field" required=""/><textarea placeholder="What do you need help with?" maxlength="5000" name="comments" data-name="Comments" required="" id="field" class="field w-input"></textarea><input type="submit" value="Send email" data-wait="Please wait..." class="button contact w-button"/></form>
+                    <div class="success-message big w-form-done">
+                        <h2>Thank you for contacting us!</h2>
+                        <p>Your submission has been received and we will reply shortly. </p>
+                    </div>
+                    <div class="w-form-fail">
+                        <p>Oops! Something went wrong while submitting the form :(</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <%- include('partials/footer.ejs') %>
+    </body>
+</html>
